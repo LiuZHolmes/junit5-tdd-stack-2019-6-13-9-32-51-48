@@ -28,4 +28,15 @@ public class FizzBuzzTest {
         // then
         assertThat(result, CoreMatchers.is("2"));
     }
+
+    @Test
+    public void should_return_fizz_when_student_is_3() {
+        // given
+        int student = 3;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        // when
+        String result = fizzBuzz.say(student);
+        // then
+        assertThat(result, CoreMatchers.is("Fizz"));
+    }
 }

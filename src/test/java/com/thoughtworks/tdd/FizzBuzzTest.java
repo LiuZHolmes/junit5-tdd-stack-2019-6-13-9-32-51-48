@@ -4,6 +4,7 @@ import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
 
@@ -49,5 +50,16 @@ public class FizzBuzzTest {
         String result = fizzBuzz.say(student);
         // then
         assertThat(result, CoreMatchers.is("Buzz"));
+    }
+
+    @Test
+    public void should_return_whizz_when_student_is_7() {
+        // given
+        int student = 7;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        // when
+        String result = fizzBuzz.say(student);
+        // then
+        assertEquals("Whizz", result);
     }
 }

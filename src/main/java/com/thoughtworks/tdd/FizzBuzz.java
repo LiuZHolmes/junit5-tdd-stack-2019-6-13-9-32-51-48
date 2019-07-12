@@ -8,6 +8,8 @@ public class FizzBuzz {
 
         String flag = multipleOf3 + multipleOf5 + multipleOf7;
         switch (flag) {
+            case "011":
+                return "BuzzWhizz";
             case "101":
                 return "FizzWhizz";
             case "110":

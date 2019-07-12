@@ -117,4 +117,15 @@ public class FizzBuzzTest {
         // then
         assertEquals("BuzzWhizz", result);
     }
+
+    @Test
+    public void should_return_fizz_buzz_whizz_when_student_is_105() {
+        // given
+        int student = 105;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        // when
+        String result = fizzBuzz.say(student);
+        // then
+        assertEquals("FizzBuzzWhizz", result);
+    }
 }

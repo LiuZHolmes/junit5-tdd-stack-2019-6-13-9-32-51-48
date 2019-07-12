@@ -21,14 +21,5 @@ public class FizzBuzz {
             default:
                 return String.valueOf(student);
         }
-//        if (flag.equals("110"))
-//            return
-//        else
-//            return "Fizz";
-//        else if (multipleOf5)
-//            return "Buzz";
-//        else if (multipleOf7)
-//            return "";
-//        return String.valueOf(student);
     }
 }

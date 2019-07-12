@@ -6,6 +6,8 @@ public class FizzBuzz {
             return "Fizz";
         else if (student == 5)
             return "Buzz";
+        else if (student == 7)
+            return "Whizz";
         return String.valueOf(student);
     }
 }

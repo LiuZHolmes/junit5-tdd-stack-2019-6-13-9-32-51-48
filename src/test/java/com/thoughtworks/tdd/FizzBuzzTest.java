@@ -84,4 +84,15 @@ public class FizzBuzzTest {
         // then
         assertEquals("Buzz", result);
     }
+
+    @Test
+    public void should_return_fizz_buzz_when_student_is_15() {
+        // given
+        int student = 15;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        // when
+        String result = fizzBuzz.say(student);
+        // then
+        assertEquals("FizzBuzz", result);
+    }
 }
